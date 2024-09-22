@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="display">
+            0
+        </div>
+        <section class="calButtonsRows">
+            <button onclick="clearDisplay()" class="calButton" id="clear">
+                c
+            </button>
+            <button onclick="deleteLast()" class="calButton">
+                &larr;
+            </button>
+            <button onclick="viewInDisplay('/')" class="calButton" id="colorBtn">
+                &divide;
+            </button>
+        </section>
+        <section class="calButtonsRows">
+            <button onclick="viewInDisplay('7')" class="calButton" id="numbers">
+                7
+            </button>
+            <button onclick="viewInDisplay('8')" class="calButton" id="numbers">
+                8
+            </button>
+            <button onclick="viewInDisplay('9')" class="calButton" id="numbers">
+                9
+            </button>
+            <button onclick="viewInDisplay('*')" class="calButton" id="colorBtn">
+                &times;
+            </button>
+        </section>
+        <section class="calButtonsRows">
+            <button onclick="viewInDisplay('4')" class="calButton" id="numbers">
+                4
+            </button>
+            <button onclick="viewInDisplay('5')" class="calButton" id="numbers">
+                5
+            </button>
+            <button onclick="viewInDisplay('6')" class="calButton" id="numbers">
+                6
+            </button>
+            <button onclick="viewInDisplay('-')" class="calButton" id="colorBtn">
+                &minus;
+            </button>
+        </section>
+        <section class="calButtonsRows">
+            <button onclick="viewInDisplay('3')" class="calButton" id="numbers">
+                3
+            </button>
+            <button onclick="viewInDisplay('2')" class="calButton" id="numbers">
+                2
+            </button>
+            <button onclick="viewInDisplay('1')" class="calButton" id="numbers">
+                1
+            </button>
+            <button onclick="viewInDisplay('+')" class="calButton" id="colorBtn">
+                &plus;
+            </button>
+        </section>
+        <section class="calButtonsRows">
+            <button onclick="viewInDisplay('.')" class="calButton">
+                .
+            </button>
+            <button onclick="viewInDisplay('0')" class="calButton" id="numbers">
+                0
+            </button>
+            <button onclick="calculate()" class="calButton" id="equal">
+                &equals;
+            </button>
+        </section>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+ html{
+    box-sizing: border-box;
+    height: 100%;
+ }
+ 
+ *,
+ *::before,
+ *::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+ }
+ body{
+    align-items: center;;
+    background: linear-gradient(320deg ,tomato,lightgreen,pink);
+    display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    height: inherit;
+    /* font-display: swap; */
+ }
+ .container{
+    height: 540px; 
+    /* width: 300px; */
+    background: rgba(255,255,255,0.30);
+    border: 2px solid rgba(255,255,255,0.50);
+    border-radius: 10px;
+    padding: 20px 35px;
+ }
+ .display{
+    background: rgba(255,255,255,0.75);
+    border: 2px solid rgba(255,255,255,0.01);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.5);
+    color: black;
+    font-size: 40px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 250px;
+    height: 90px;
+    /* height: 30%;
+    width: 100%;
+    text-align: end;
+    text-wrap: wrap; */
+ }
+ .calButtonsRows{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center;
+    column-gap: 20px; */
+    margin: 5% 0;
+ }
+ .calButton{
+    background: rgba(255,255,255,0.75);
+    border: 2px solid rgba(255,255,255,0.01);
+    border-radius: 16%;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.5);
+    color: black;;
+    font-family: inherit;
+    /* width : 20%; */
+    flex-basis: 20%;
+    font-size: 24px;
+    height: 65px;
+ }
+ #colorBtn{
+    border: 1px solid grey;
+    color: white;
+    background-color: tomato;
+ }
+ #colorBtn:hover{
+    background-color: whitesmoke;
+    color: inherit;
+ }
+ #colorBtn:active{
+    background-color: lightskyblue;
+    color: red;
+ }
+ .calButton:hover{
+    background-color: tomato;
+    color: whitesmoke;
+ }
+ .calButton:active{
+    background-color: lightskyblue;
+    color: red;
+ }
+ #clear{
+    flex-basis: 47%;
+    border-radius: 16px;
+ }
+ #equal{
+    border: 1px solid grey;
+    color: white;
+    background-color: tomato;
+    flex-basis: 47%;
+    border-radius: 16px;
+ }
+ #equal:hover{
+    background-color: whitesmoke;
+    color: inherit;
+ }
+ #equal:active{
+    background-color: lightskyblue;
+    color: red;
+ }
